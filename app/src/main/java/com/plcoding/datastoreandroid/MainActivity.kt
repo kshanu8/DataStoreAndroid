@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         //dataStore = createDataStore(name = "settings")
 
         Log.e("Testing","3")
+        Log.e("Testing","4")
 
         binding.btnSave.setOnClickListener {
             lifecycleScope.launch {
