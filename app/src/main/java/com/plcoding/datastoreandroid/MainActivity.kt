@@ -2,6 +2,7 @@ package com.plcoding.datastoreandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.datastore.core.DataStore
 //import androidx.datastore.createDataStore
 import androidx.datastore.preferences.core.Preferences
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //dataStore = createDataStore(name = "settings")
+
+        Log.e("Testing","1")
 
         binding.btnSave.setOnClickListener {
             lifecycleScope.launch {
